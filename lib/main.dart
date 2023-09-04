@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mail_merge/screens/comandos.dart';
 import 'package:mail_merge/screens/home.dart';
 
 void main() {
@@ -12,10 +13,10 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      initialRoute: "Home",
+      routes: {
+        "Home": (context) => Home(),
+      },
     );
   }
 }
-
-//animacion errores
-//form validacion errors
