@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_interpolation_to_compose_strings
+
 import 'package:flutter/material.dart';
 import 'package:clipboard/clipboard.dart';
 import 'package:mail_merge/constants.dart';
@@ -55,6 +57,19 @@ class _ComandosScreenState extends State<ComandosScreen> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             SizedBox(height: 50),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "DOMINIO:   " +
+                                    widget.subdominios[index] +
+                                    (index != 0 ? "." : "") +
+                                    widget.dominio,
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                            SizedBox(height: 30),
                             TextoCopia(
                               text: crearCarpeta(
                                   domin: widget.dominio,
@@ -73,21 +88,21 @@ class _ComandosScreenState extends State<ComandosScreen> {
                               text: crearHTML(
                                   domin: widget.dominio,
                                   subd: widget.subdominios[index]),
-                              titleIndex: 2,
+                              titleIndex: 3,
                             ),
                             SizedBox(height: 20),
                             TextoCopia(
                               text: crearSitio(
                                   domin: widget.dominio,
                                   subd: widget.subdominios[index]),
-                              titleIndex: 2,
+                              titleIndex: 4,
                             ),
                             SizedBox(height: 20),
                             TextoCopia(
                               text: habilitarSitio(
                                   domin: widget.dominio,
                                   subd: widget.subdominios[index]),
-                              titleIndex: 2,
+                              titleIndex: 5,
                             ),
                             SizedBox(height: 200),
                           ],
@@ -104,7 +119,7 @@ class _ComandosScreenState extends State<ComandosScreen> {
       floatingActionButton: Padding(
         padding: EdgeInsets.only(left: 50, bottom: 10, right: 20),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FloatingActionButton(
               onPressed: () {
@@ -112,14 +127,17 @@ class _ComandosScreenState extends State<ComandosScreen> {
                     duration: Duration(milliseconds: 500),
                     curve: Curves.bounceOut);
               },
+              child: Icon(Icons.arrow_back),
               heroTag: "b1",
             ),
+            SizedBox(width: size.width * 0.3),
             FloatingActionButton(
               onPressed: () {
                 controller.nextPage(
                     duration: Duration(milliseconds: 500),
                     curve: Curves.bounceOut);
               },
+              child: Icon(Icons.arrow_forward),
               heroTag: "b2",
             )
           ],

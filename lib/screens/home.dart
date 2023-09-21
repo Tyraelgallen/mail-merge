@@ -31,10 +31,6 @@ class _HomeState extends State<Home> {
       animationController1.reset();
       animationController1.forward();
     }
-    // if (!lista.contains(textEditingController2.text) &&
-    //     !textEditingController2.text.contains(".")) {
-    //
-    // }
 
     focusNode.requestFocus();
     setState(() {});
@@ -124,10 +120,11 @@ class _HomeState extends State<Home> {
                         child: TextFormField(
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                           validator: (value) {
-                            if (textEditingController2.text.contains(".")) {
-                              return "Asegurese que el subdominio no contenga puntos";
+                            String t = textEditingController2.text;
+                            if (t.contains(RegExp(r'[^\w\d]+'))) {
+                              return "Asegurese que el subdominio no contenga puntos, comas o caracteres especiales";
                             }
-                            if (lista.contains(textEditingController2.text)) {
+                            if (lista.contains(t)) {
                               return "Ya existe este subdominio en tu lista";
                             }
                             return null;
@@ -157,7 +154,9 @@ class _HomeState extends State<Home> {
                 SizedBox(height: 10),
                 Container(
                   child: Text(
-                    lista.length == 0 ? "" : lista.toString(),
+                    lista.length == 0
+                        ? ""
+                        : lista.where((element) => element != "").toString(),
                     textAlign: TextAlign.start,
                     style: TextStyle(fontSize: 18),
                   ),
@@ -170,8 +169,11 @@ class _HomeState extends State<Home> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => ComandosScreen(
-                                    dominio: textEditingController.text,
-                                    subdominios: lista,
+                                    dominio: textEditingController.text
+                                        .toLowerCase(),
+                                    subdominios: lista
+                                        .map((e) => e.toLowerCase())
+                                        .toList(),
                                   ),
                                 ));
                           }
