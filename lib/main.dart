@@ -20,3 +20,6 @@ class MainApp extends StatelessWidget {
     );
   }
 }
+
+//comando para generar web (archivo HTML,JS,etc):
+//flutter build web
