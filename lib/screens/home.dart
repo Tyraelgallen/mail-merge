@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mail_merge/providerLanguage/lang_selector.dart';
 import 'package:mail_merge/screens/comandos.dart';
 import 'package:animate_do/animate_do.dart';
+import "package:flutter_gen/gen_l10n/app_localizations.dart";
 
 List<String> lista = [];
 final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -47,8 +49,19 @@ class _HomeState extends State<Home> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: Text("MAIL MERGE"),
+        title: Text(AppLocalizations.of(context)!.tituloapp),
         centerTitle: true,
+        actions: [
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(10)),
+            width: 300,
+            // height: 20,
+            child: LanguageSelect(),
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Center(
