@@ -2,6 +2,82 @@
     "tituloapp": "COMBINAR CORRESPONDENCIA",
     "@tituloapp": {
         "description": "COMBINAR CORRESPONDENCIA"
-    }
+    },
+
+    "descripcion1": "Esta app sirve para poder crear de manera automatizada los comandos de creacion de carpetas y archivos requeridos dentro de un Stack LAMP en un server UBUNTU",
+    "@descripcion1": {
+        "description": "descripcion1"
+    },
+
+    "descripcion2": "Completa los siguientes campos para generar tu lista de comandos",
+    "@descripcion2": {
+        "description": "descripcion2"
+    },
+
+    "inserte1": "Inserte aqui el nombre de su dominio",
+    "@inserte1": {
+        "description": "inserte1"
+    },
+
+    "inserte2": "Inserte aqui los nombres de todos los subdominios que desea crear, ingresando uno por uno",
+    "@inserte2": {
+        "description": "inserte2"
+    },
+
+    "subderror1": "Asegurese que el subdominio no contenga puntos, comas o caracteres especiales",
+    "@subderror1": {
+        "description": "subderror1"
+    },
+
+    "subderror2": "Ya existe este subdominio en tu lista",
+    "@subderror2": {
+        "description": "subderror2"
+    },
+
+    "help1": "Este comando te permite crear una carpeta en tu directorio www para almacenar tu pagina web",
+    "@help1": {
+        "description": "help1"
+    },
+
+    "help2": "Cambia los permisos de administrador de la carpeta previamente creada",
+    "@help2": {
+        "description": "help2"
+    },
+  
+    "help3": "Crea un archivo html basico para realizar una prueba de funcionamiento de la página",
+    "@help3": {
+        "description": "help3"
+    },
+
+    "help4":  "Genera un archivo .conf en el directorio sites-available que determina que la página esta disponible",
+    "@help4": {
+        "description": "help4"
+    },
+
+    "help5": "Habilita la página a todo publico",
+    "@help5": {
+        "description": "help5"
+    },
+
+    "comandos": "Comandos",
+    "@comandos": {
+        "description": "comandos"
+    },
     
+    
+    "descripcion3": "Aqui estan tus comandos para poder crear dominios y subdominios",
+    "@descripcion3": {
+        "description": "descripcion3"
+    },
+    
+    "dominio": "Dominio",
+    "@dominio": {
+        "description": "Dominio"
+    },
+
+    "copiado": "Copiado",
+    "@copiado": {
+        "description": "Copiado"
+    }
 }
+

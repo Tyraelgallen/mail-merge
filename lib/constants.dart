@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import "package:flutter_gen/gen_l10n/app_localizations.dart";
+
 String defaultSubdominio(String? subd) {
   String subdominio = subd ?? "";
   if (subdominio != "") subdominio = subdominio + ".";
@@ -59,9 +62,10 @@ String habilitarSitio({required String domin, String? subd}) {
   return result;
 }
 
-String textosExplicativos(int index) {
+String textosExplicativos(int index, BuildContext context) {
   switch (index) {
     case 1:
+      // return AppLocalizations.of(context)!.descripcion1;
       return "Este comando te permite crear una carpeta en tu directorio www para almacenar tu pagina web";
     case 2:
       return "Cambia los permisos de administrador de la carpeta previamente creada";

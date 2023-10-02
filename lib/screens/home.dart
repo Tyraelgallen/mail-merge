@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
                 SizedBox(height: size.height * 0.1),
                 Container(
                   child: Text(
-                    "Esta app sirve para poder crear de manera automatizada los comandos de creacion de carpetas y archivos requeridos dentro de un Stack LAMP en un server UBUNTU",
+                    AppLocalizations.of(context)!.descripcion1,
                     textAlign: TextAlign.start,
                     style: TextStyle(fontSize: 20),
                   ),

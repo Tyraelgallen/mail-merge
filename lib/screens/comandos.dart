@@ -167,9 +167,9 @@ class _TextoCopiaState extends State<TextoCopia> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        (visible && textosExplicativos(widget.titleIndex) != "")
+        (visible && textosExplicativos(widget.titleIndex, context) != "")
             ? Text(
-                textosExplicativos(widget.titleIndex),
+                textosExplicativos(widget.titleIndex, context),
                 style: TextStyle(fontSize: 17),
               )
             : SizedBox(),

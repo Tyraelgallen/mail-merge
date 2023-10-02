@@ -1,4 +1,31 @@
 {
-    "tituloapp": "MAIL MERGE"
+    "tituloapp": "MAIL MERGE",
 
+    "descripcion1": "This app is used to automatically create the required folder and file creation commands within a LAMP Stack on a UBUNTU server",
+    "descripcion2": "Completa los siguientes campos para generar tu lista de comandos",
+    
+    "inserte1": "Inserte aqui el nombre de su dominio",
+    "inserte2": "Inserte aqui los nombres de todos los subdominios que desea crear, ingresando uno por uno",
+
+    "subderror1": "Asegurese que el subdominio no contenga puntos, comas o caracteres especiales",
+
+    "subderror2": "Ya existe este subdominio en tu lista",
+
+    "help1": "Este comando te permite crear una carpeta en tu directorio www para almacenar tu pagina web",
+
+    "help2": "Cambia los permisos de administrador de la carpeta previamente creada",
+
+    "help3": "Crea un archivo html basico para realizar una prueba de funcionamiento de la página",
+
+    "help4":  "Genera un archivo .conf en el directorio sites-available que determina que la página esta disponible",
+  
+    "help5": "Habilita la página a todo publico",
+
+    "comandos": "Comandos",
+   
+    "descripcion3": "Aqui estan tus comandos para poder crear dominios y subdominios",
+ 
+    "dominio": "Dominio",
+ 
+    "copiado": "Copiado"
 }
