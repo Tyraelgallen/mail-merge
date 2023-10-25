@@ -15,7 +15,7 @@ class LocaleProvider extends ChangeNotifier {
   }
 
   void clearLocale() {
-    _locale = const Locale('es');
+    _locale = const Locale('en');
     notifyListeners();
   }
 }

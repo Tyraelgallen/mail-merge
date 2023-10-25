@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:clipboard/clipboard.dart';
 import 'package:mail_merge/constants.dart';
+import "package:flutter_gen/gen_l10n/app_localizations.dart";
 
 class ComandosScreen extends StatefulWidget {
   final String dominio;
@@ -29,7 +30,7 @@ class _ComandosScreenState extends State<ComandosScreen> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Comandos"),
+        title: Text(AppLocalizations.of(context)!.comandos),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -41,7 +42,7 @@ class _ComandosScreenState extends State<ComandosScreen> {
                 SizedBox(height: 50),
                 Center(
                     child: Text(
-                  "Aqui estan tus comandos para poder crear dominios y subdominios",
+                  AppLocalizations.of(context)!.descripcion3,
                   style: TextStyle(fontSize: 25),
                 )),
                 Container(
@@ -60,7 +61,8 @@ class _ComandosScreenState extends State<ComandosScreen> {
                             Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                "DOMINIO:   " +
+                                AppLocalizations.of(context)!.dominio +
+                                    ":   " +
                                     widget.subdominios[index] +
                                     (index != 0 ? "." : "") +
                                     widget.dominio,
@@ -196,7 +198,8 @@ class _TextoCopiaState extends State<TextoCopia> {
                         FlutterClipboard.copy(widget.text).then((value) {
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                             content: Text(
-                              "Copiado ${widget.text}",
+                              AppLocalizations.of(context)!.copiado +
+                                  " ${widget.text}",
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(fontSize: 22),

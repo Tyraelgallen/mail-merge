@@ -84,7 +84,7 @@ class _HomeState extends State<Home> {
                 SizedBox(height: 20),
                 Container(
                   child: Text(
-                    "Completa los siguientes campos para generar tu lista de comandos",
+                    AppLocalizations.of(context)!.descripcion2,
                     textAlign: TextAlign.start,
                     style: TextStyle(fontSize: 18),
                   ),
@@ -93,7 +93,7 @@ class _HomeState extends State<Home> {
                 SizedBox(height: 50),
                 Container(
                   child: Text(
-                    "Inserte aqui el nombre de su dominio",
+                    AppLocalizations.of(context)!.inserte1,
                     textAlign: TextAlign.start,
                     style: TextStyle(fontSize: 18),
                   ),
@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
                 SizedBox(height: 50),
                 Container(
                   child: Text(
-                    "Inserte aqui los nombres de todos los subdominios que desea crear, ingresando uno por uno",
+                    AppLocalizations.of(context)!.inserte2,
                     textAlign: TextAlign.start,
                     style: TextStyle(fontSize: 18),
                   ),
@@ -135,10 +135,10 @@ class _HomeState extends State<Home> {
                           validator: (value) {
                             String t = textEditingController2.text;
                             if (t.contains(RegExp(r'[^\w\d]+'))) {
-                              return "Asegurese que el subdominio no contenga puntos, comas o caracteres especiales";
+                              return AppLocalizations.of(context)!.subderror1;
                             }
                             if (lista.contains(t)) {
-                              return "Ya existe este subdominio en tu lista";
+                              return AppLocalizations.of(context)!.subderror2;
                             }
                             return null;
                           },

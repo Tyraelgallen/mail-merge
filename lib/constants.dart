@@ -65,16 +65,15 @@ String habilitarSitio({required String domin, String? subd}) {
 String textosExplicativos(int index, BuildContext context) {
   switch (index) {
     case 1:
-      // return AppLocalizations.of(context)!.descripcion1;
-      return "Este comando te permite crear una carpeta en tu directorio www para almacenar tu pagina web";
+      return AppLocalizations.of(context)!.help1;
     case 2:
-      return "Cambia los permisos de administrador de la carpeta previamente creada";
+      return AppLocalizations.of(context)!.help2;
     case 3:
-      return "Crea un archivo html basico para realizar una prueba de funcionamiento de la página";
+      return AppLocalizations.of(context)!.help3;
     case 4:
-      return "Genera un archivo .conf en el directorio sites-available que determina que la página esta disponible";
+      return AppLocalizations.of(context)!.help4;
     case 5:
-      return "Habilita la página a todo publico";
+      return AppLocalizations.of(context)!.help5;
   }
 
   return "";

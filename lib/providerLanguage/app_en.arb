@@ -1,31 +1,31 @@
 {
-    "tituloapp": "MAIL MERGE",
+    "tituloapp": "Combine Mail Merge",
 
-    "descripcion1": "This app is used to automatically create the required folder and file creation commands within a LAMP Stack on a UBUNTU server",
-    "descripcion2": "Completa los siguientes campos para generar tu lista de comandos",
-    
-    "inserte1": "Inserte aqui el nombre de su dominio",
-    "inserte2": "Inserte aqui los nombres de todos los subdominios que desea crear, ingresando uno por uno",
+    "descripcion1": "This application is used to automatically generate the necessary file and folder creation commands within a LAMP stack on a UBUNTU server",
+    "descripcion2": "Fill in the following fields to generate your list of commands",
 
-    "subderror1": "Asegurese que el subdominio no contenga puntos, comas o caracteres especiales",
+    "inserte1": "Insert your domain name here",
+    "inserte2": "Insert the names of all the subdomains you want to create here, entering one by one",
 
-    "subderror2": "Ya existe este subdominio en tu lista",
+    "subderror1": "Ensure that the subdomain does not contain periods, commas, or special characters",
 
-    "help1": "Este comando te permite crear una carpeta en tu directorio www para almacenar tu pagina web",
+    "subderror2": "This subdomain already exists in your list",
 
-    "help2": "Cambia los permisos de administrador de la carpeta previamente creada",
+    "help1": "This command allows you to create a folder in your www directory to store your webpage",
 
-    "help3": "Crea un archivo html basico para realizar una prueba de funcionamiento de la página",
+    "help2": "Change the administrator permissions of the previously created folder",
 
-    "help4":  "Genera un archivo .conf en el directorio sites-available que determina que la página esta disponible",
-  
-    "help5": "Habilita la página a todo publico",
+    "help3": "Create a basic HTML file to test the functionality of the page",
 
-    "comandos": "Comandos",
-   
-    "descripcion3": "Aqui estan tus comandos para poder crear dominios y subdominios",
- 
-    "dominio": "Dominio",
- 
-    "copiado": "Copiado"
+    "help4": "Generate a .conf file in the sites-available directory that indicates the page is available",
+
+    "help5": "Enable the page for the general public",
+
+    "comandos": "Commands",
+
+    "descripcion3": "Here are your commands for creating domains and subdomains",
+
+    "dominio": "Domain",
+
+    "copiado": "Copied"
 }

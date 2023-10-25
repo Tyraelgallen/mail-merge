@@ -2,30 +2,30 @@
     "tituloapp": "Combinar Correspondência",
 
     "descripcion1": "Este aplicativo é usado para criar automaticamente os comandos necessários de criação de arquivos e pastas dentro de uma pilha LAMP em um servidor UBUNTU",
-    "descripcion2": "Completa los siguientes campos para generar tu lista de comandos",
-    
-    "inserte1": "Inserte aqui el nombre de su dominio",
-    "inserte2": "Inserte aqui los nombres de todos los subdominios que desea crear, ingresando uno por uno",
+    "descripcion2": "Complete os campos a seguir para gerar sua lista de comandos",
 
-    "subderror1": "Asegurese que el subdominio no contenga puntos, comas o caracteres especiales",
-   
-    "subderror2": "Ya existe este subdominio en tu lista",
-   
-    "help1": "Este comando te permite crear una carpeta en tu directorio www para almacenar tu pagina web",
-   
-    "help2": "Cambia los permisos de administrador de la carpeta previamente creada",
- 
-    "help3": "Crea un archivo html basico para realizar una prueba de funcionamiento de la página",
-    
-    "help4":  "Genera un archivo .conf en el directorio sites-available que determina que la página esta disponible",
-    
-    "help5": "Habilita la página a todo publico",
-   
+    "inserte1": "Insira aqui o nome do seu domínio",
+    "inserte2": "Insira aqui os nomes de todos os subdomínios que deseja criar, inserindo um de cada vez",
+
+    "subderror1": "Certifique-se de que o subdomínio não contenha pontos, vírgulas ou caracteres especiais",
+
+    "subderror2": "Este subdomínio já existe na sua lista",
+
+    "help1": "Este comando permite criar uma pasta no seu diretório www para armazenar o seu site",
+
+    "help2": "Altere as permissões de administrador da pasta criada anteriormente",
+
+    "help3": "Crie um arquivo HTML básico para testar o funcionamento da página",
+
+    "help4": "Gere um arquivo .conf no diretório sites-available que indica que a página está disponível",
+
+    "help5": "Habilite a página para o público em geral",
+
     "comandos": "Comandos",
-    
-    "descripcion3": "Aqui estan tus comandos para poder crear dominios y subdominios",
-   
-    "dominio": "Dominio",
+
+    "descripcion3": "Aqui estão os seus comandos para criar domínios e subdomínios",
+
+    "dominio": "Domínio",
 
     "copiado": "Copiado"
 }
